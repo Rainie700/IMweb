@@ -1,80 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>搜尋結果</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>搜尋結果</h1>
-        <nav class="top-bar">
-            <a href="index.html">回首頁</a> | <a href="index-en.html">English</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>搜尋結果：</h2>
-        <div id="results"></div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 資訊管理學系</p>
-    </footer>
-
-    <script>
-        // 獲取 URL 中的搜尋參數
-        const params = new URLSearchParams(window.location.search);
-        const query = params.get('query');
-
-        // 模擬搜尋結果
-        const results = [
-            "課程介紹 - 資訊管理基礎",
-            "教授介紹 - 李明教授",
-            "系所特色 - 我們的核心能力"
-        ];
-
-        // 根據查詢顯示結果
-        const filteredResults = results.filter(item => item.includes(query));
-
-        // 將結果顯示在頁面上
-        const resultsDiv = document.getElementById('results');
-        if (filteredResults.length > 0) {
-            filteredResults.forEach(result => {
-                const p = document.createElement('p');
-                p.textContent = result;
-                resultsDiv.appendChild(p);
-            });
-        } else {
-            resultsDiv.innerHTML = "<p>沒有找到相關內容。</p>";
-        }
-
-        // 搜索指定頁面
-        function searchContent() {
-            let query = document.querySelector("input[name='query']").value.toLowerCase();
-            let results = [];
-            let pages = ['index.html', 'faculty.html', 'courses.html', 'contact.html']; // 所有要搜尋的頁面
-            pages.forEach(page => {
-                fetch(page)
-                    .then(response => response.text())
-                    .then(html => {
-                        if (html.toLowerCase().includes(query)) {
-                            results.push(page); // 如果匹配到關鍵字，記錄頁面
-                        }
-                    });
-            });
-            displayResults(results); // 顯示搜尋結果
-        }
-
-        function displayResults(results) {
-            // 顯示搜尋結果的邏輯
-            alert("匹配頁面: " + results.join(", "));
-        }
-    </script>
-</body>
-</html>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,111 +16,15 @@
 
     <main>
         <h2>搜尋結果：</h2>
-        <div id="results"></div>
+        <!-- 搜尋結果顯示區 -->
+        <div id="search-results">
+            <script async src="https://cse.google.com/cse.js?cx=70e792a167ae24708"></script>
+            <div class="gcse-searchresults-only"></div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 資訊管理學系</p>
     </footer>
-
-    <script>
-        // 獲取 URL 中的搜尋參數
-        const params = new URLSearchParams(window.location.search);
-        const query = params.get('query') ? params.get('query').toLowerCase() : '';
-
-        // 要搜尋的頁面列表
-        const pages = ['index.html',,
-            'courses-year1.html',
-            'courses-year2.html',
-            'courses-year3.html',
-            'courses-year4.html',
-            'faculty-fulltime.html',
-            'faculty-parttime.html',
-            'faculty-project.html',
-            'student-undergrad.html',
-            'student-master.html',
-            'student-phd.html',
-            'admission-announcements.html',
-            'admission-undergrad.html',
-            'admission-master.html',
-            'admission-phd.html',
-            'alumni-announcements.html',
-            'alumni-page.html',
-            'contact.html',
-            'search_results.html',
-            'event1.html',
-            'job1.html',
-            'competition1.html',
-            'education-goals.html',
-            'administrative-team.html',
-            'future-development.html',
-            'core-competencies.html',
-            'facilities.html',
-            'internship.html'];
-
-        // 搜尋功能
-        async function searchContent() {
-            const results = [];
-            for (const page of pages) {
-                try {
-                    const response = await fetch(page);
-                    const text = await response.text();
-                    // 建立 DOMParser 來解析 HTML 內容
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(text, 'text/html');
-                    const bodyText = doc.body.textContent.toLowerCase();
-
-                    // 搜尋關鍵字並記錄包含的段落
-                    if (bodyText.includes(query)) {
-                        const matchingParagraphs = Array.from(doc.querySelectorAll('p'))
-                            .filter(p => p.textContent.toLowerCase().includes(query))
-                            .map(p => p.textContent.trim());
-
-                        if (matchingParagraphs.length > 0) {
-                            results.push({
-                                page: page,
-                                snippets: matchingParagraphs.slice(0, 3) // 顯示最多 3 個相關段落
-                            });
-                        }
-                    }
-                } catch (error) {
-                    console.error(`Error fetching ${page}:`, error);
-                }
-            }
-
-            displayResults(results);
-        }
-
-        // 顯示搜尋結果
-        function displayResults(results) {
-            const resultsDiv = document.getElementById('results');
-            if (results.length > 0) {
-                results.forEach(result => {
-                    const section = document.createElement('section');
-                    const link = document.createElement('a');
-                    link.href = result.page;
-                    link.textContent = `跳轉到 ${result.page}`;
-                    section.appendChild(link);
-
-                    result.snippets.forEach(snippet => {
-                        const p = document.createElement('p');
-                        p.textContent = snippet;
-                        section.appendChild(p);
-                    });
-
-                    resultsDiv.appendChild(section);
-                });
-            } else {
-                resultsDiv.innerHTML = "<p>沒有找到相關內容。</p>";
-            }
-        }
-
-        // 執行搜尋
-        if (query) {
-            searchContent();
-        } else {
-            document.getElementById('results').innerHTML = "<p>請輸入搜尋關鍵字。</p>";
-        }
-    </script>
 </body>
 </html>
