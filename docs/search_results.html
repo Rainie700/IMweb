@@ -18,8 +18,18 @@
         <h2>搜尋結果：</h2>
         <!-- 搜尋結果顯示區 -->
         <div id="search-results">
-            <script async src="https://cse.google.com/cse.js?cx=70e792a167ae24708"></script>
-            <div class="gcse-searchresults-only"></div>
+            <script>
+                (function () {
+                    var cx = '70e792a167ae24708'; // 搜尋引擎 ID
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+            </script>
+            <gcse:searchresults-only></gcse:searchresults-only>
         </div>
     </main>
 
