@@ -28,6 +28,32 @@
                     var s = document.getElementsByTagName('script')[0];
                     s.parentNode.insertBefore(gcse, s);
                 })();
+
+                function searchCallback() {
+                    // 搜尋不到時顯示的訊息
+                    const resultsContainer = document.querySelector('.gsc-results-wrapper-visible');
+                    const noResultsMessage = document.createElement('p');
+                    noResultsMessage.id = 'no-results-message';
+                    noResultsMessage.style.color = 'red';
+                    noResultsMessage.style.textAlign = 'center';
+                    noResultsMessage.style.marginTop = '20px';
+                    noResultsMessage.textContent = '未找到相關搜尋結果，請嘗試其他關鍵字。';
+
+                    // 如果找不到內容，則顯示提示訊息
+                    if (!resultsContainer || resultsContainer.innerHTML.trim() === '') {
+                        const searchResultsDiv = document.getElementById('search-results');
+                        searchResultsDiv.appendChild(noResultsMessage);
+                    } else {
+                        // 如果有結果，確保提示訊息不會重複顯示
+                        const existingMessage = document.getElementById('no-results-message');
+                        if (existingMessage) {
+                            existingMessage.remove();
+                        }
+                    }
+                }
+
+                // 延遲檢查結果是否存在
+                setInterval(searchCallback, 1000);
             </script>
             <gcse:searchresults-only></gcse:searchresults-only>
         </div>
@@ -38,3 +64,4 @@
     </footer>
 </body>
 </html>
+
