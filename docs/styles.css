@@ -515,6 +515,9 @@ h3 {
     padding-bottom: 20px; /* 增加每個講師區塊的底部間距 */
     position: relative;
 }
+.faculty-member img.faculty-photo {
+    margin-bottom: 20px; /* 增加圖片下面的間距，讓照片和分隔線有距離 */
+}
 
 .faculty-member::after {
     content: '';
