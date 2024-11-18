@@ -507,3 +507,12 @@ h3 {
     background: #000 !important;
     color: #fff !important;
 }*/
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* 調整顏色和線條粗細 */
+    margin: 20px 0; /* 增加上下間距 */
+}
+
