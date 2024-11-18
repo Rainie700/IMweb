@@ -442,7 +442,7 @@ h3 {
     /*width: 100%;*/ /*每張圖片寬度佔滿跑馬燈容器 */
     height: auto; /*保持圖片的比例 */
     /*display: block;*/
-    margin: 0 auto;/**/ /*讓圖片置中*/
+    margin: 0 auto !important;/**/ /*讓圖片置中*/
 
 
     max-height: 100%;
