@@ -519,3 +519,10 @@ h3 {
 
 
 
+.gcse-searchresults-only {
+    display: block !important;
+    visibility: visible !important;
+}
+
+
+
