@@ -221,6 +221,12 @@ h3 {
     color: #333; /* 文字顏色 */
 }
 
+/* eventl.html 中的 h3 樣式 */
+#event h3 {
+    background-color: transparent; /* 去掉底色 */
+    color: #333; /* 文字顏色 */
+}
+
 /* faculty 頁面中的 h3 標題對齊 */
 #faculty-page h3 {
     text-align: left; /* 讓教授的名字靠左對齊 */
