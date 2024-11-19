@@ -516,10 +516,9 @@ h3 {
     position: relative;
 }
 
-.gsc-control-cse:after {
-    visibility: visible !important;
-    height: auto !important; /* 或設為適合的高度 */
-    clear: none !important;
+main {
+    min-height: 500px;
+    background-color: #d3d3d3;
 }
 
 
