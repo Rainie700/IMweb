@@ -265,6 +265,19 @@ h3 {
     color: #443C3C; /* 文字顏色 */
 }
 
+/* admission-ann1~3.html 中的 h3 樣式 */
+#admission-ann1 h3 {
+    background-color: transparent; /* 去掉底色 */
+    color: #333; /* 文字顏色 */
+}
+#admission-ann2 h3 {
+    background-color: transparent; /* 去掉底色 */
+    color: #333; /* 文字顏色 */
+}
+#admission-ann3 h3 {
+    background-color: transparent; /* 去掉底色 */
+    color: #333; /* 文字顏色 */
+}
 /*系友專區 h3 樣式*/
 #alumni h3 {
     color: #ffffff; /* 如果需要保持底色，可以用此樣式 */
