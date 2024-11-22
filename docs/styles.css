@@ -535,6 +535,13 @@ h3 {
     position: relative;
 }
 
+#JT-1, #JT-2, #JT-3 {
+    color: #443C3C; /* 如果需要保持底色，可以用此樣式 */
+    background-color: #D0CBCB; /* 背景顏色 */
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block; /* 使背景色只在文字區域 */
+}
 
 
 
