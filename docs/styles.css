@@ -445,6 +445,10 @@ ul.dropdown-menu .dropdown-menu {
     .main-menu li:hover > .dropdown-menu {
         display: block;
     }
+/* 鼠標懸停時顯示第二層下拉選單 *//* 新增 */
+ul.dropdown-menu li:hover > .dropdown-menu {
+    display: block;
+}
 
     /*圖片跑馬燈*/
 .carousel {
