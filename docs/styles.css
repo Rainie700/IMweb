@@ -553,6 +553,13 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     border-radius: 5px;
     display: inline-block; /* 使背景色只在文字區域 */
 }
+#SS-1, #SS-2, #SS-3, #SS-4 {
+    color: #443C3C; /* 如果需要保持底色，可以用此樣式 */
+    background-color: #D0CBCB; /* 背景顏色 */
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block; /* 使背景色只在文字區域 */
+}
 
 
 
