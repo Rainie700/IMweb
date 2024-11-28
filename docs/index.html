@@ -156,6 +156,17 @@
         let currentIndex = 0;
         const images = document.querySelectorAll('.carousel-images img');
 
+        // 預先加載圖片(新增)
+        const preloadImages = () => {
+            images.forEach((image) => {
+                const img = new Image();
+                img.src = image.src;
+            });
+        };
+
+        // 執行預加載(新增)
+        preloadImages();
+
         function showNextImage() {
             images[currentIndex].classList.remove('visible');
             currentIndex = (currentIndex + 1) % images.length;
