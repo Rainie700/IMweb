@@ -303,8 +303,15 @@ h3 {
     padding: 3px; /* 設定搜尋框的內邊距，讓內部元素不會緊貼邊緣 */
     margin-left: 73vw;
     max-width: calc(100% - 73vw); /* 確保搜尋框不會超出螢幕 */
-    margin-top: 5px; /* 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
+    /* margin-top: 5px; 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
     box-sizing: border-box; /* 確保 padding 和 border 包括在內 */
+
+    /*新增*/
+        position: absolute; /* 絕對定位 */
+        top: 5px; /* 距離頁面頂部的距離 */
+        left: 73%; /* 使用相對於螢幕寬度的百分比定位 */
+        transform: translateX(-50%); /* 確保在縮小或調整螢幕寬度時仍然居中顯示 */
+        max-width: calc(100% - 5vw); /* 確保搜尋欄在縮小時不會超出頁面 */
 }
 
 .search-form input {
@@ -312,9 +319,11 @@ h3 {
     border: 1px solid #ccc; /* 設定輸入框的邊框顏色為灰色 */
     border-radius: 10px; /* 給輸入框設置圓角，讓邊角更加圓滑 */
     width: 200px; /* 設定輸入框的寬度為 200px */
-    max-width: 100%; /* 防止超出 */
-
-    /*flex-grow: 1;*//*輸入框佔據剩餘空間*/
+    /* max-width: 100%; 防止超出 */
+    
+/*(新增)*/
+    max-width: calc(100% - 50px); /* 避免輸入框在窄螢幕上過大 */
+    box-sizing: border-box; /* 包括內外邊距 */
 }
 
 .search-form button {
@@ -326,7 +335,7 @@ h3 {
     cursor: pointer; /* 設定鼠標懸停在按鈕上時顯示為手指狀，表示該元素是可點擊的 */
 
 
-    max-width: 100%; /* 確保按鈕不會超出容器 */
+    /* max-width: 100%; 確保按鈕不會超出容器 */
     flex-shrink: 0;  /*防止按鈕縮小 */
     box-sizing: border-box; /* 確保 padding 和 border 包括在內 */
 }
@@ -334,6 +343,25 @@ h3 {
 
 .search-form button:hover {
     background-color: #3498db; /* 當鼠標懸停在按鈕上時，改變按鈕的背景顏色為藍色 */
+}
+/* 手機響應式樣式(新增) */
+@media screen and (max-width: 768px) {
+    .search-form {
+        top: 10px; /* 在手機上稍微下移 */
+        left: 70%; /* 略微調整相對位置 */
+        transform: translateX(-50%); /* 確保仍然居中 */
+        width: 95%; /* 搜尋欄佔據大部分螢幕寬度 */
+    }
+
+    .search-form input {
+        width: 60%; /* 輸入框寬度在窄螢幕上調整 */
+        max-width: calc(100% - 100px); /* 留出按鈕空間 */
+    }
+
+    .search-form button {
+        width: auto; /* 保持按鈕大小 */
+        padding: 0.5rem; /* 減小內邊距 */
+    }
 }
 
 
