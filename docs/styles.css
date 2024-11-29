@@ -452,10 +452,10 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 
     /*圖片跑馬燈*/
 .carousel {
-    width: 100%; /* 寬度佔滿容器 */
-    max-width: 1180px; /* 設定最大寬度 */
+    width: 90%; /* 寬度佔滿容器 */
+    max-width: 80vw; /* 設定最大寬度 */
     height: 40vh; /* 高度相對於視窗高度 */
-    max-height: 300px; /* 最大高度限制 */
+    max-height: 80vh; /* 最大高度限制 */
     margin: 0 auto; /* 讓跑馬燈容器居中 */
     overflow: hidden; /* 隱藏超出容器範圍的部分 */
     position: relative; /* 為子元素提供定位參考 */
