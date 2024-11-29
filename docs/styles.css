@@ -301,17 +301,20 @@ h3 {
     background-color: #B5A8A0; /* 設定搜尋框背景顏色 */
     border-radius: 3px; /* 給搜尋框外圍添加圓角 */
     padding: 3px; /* 設定搜尋框的內邊距，讓內部元素不會緊貼邊緣 */
-    margin-left: 73vw;
-    max-width: calc(100% - 73vw); /* 確保搜尋框不會超出螢幕 */
+    /*margin-left: 73vw;*/
+    max-width: calc(100% - 10px); /* 確保搜尋框不會超出螢幕 */
     /* margin-top: 5px; 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
     box-sizing: border-box; /* 確保 padding 和 border 包括在內 */
 
     /*新增*/
         position: absolute; /* 絕對定位 */
         top: 5px; /* 距離頁面頂部的距離 */
-        left: 73%; /* 使用相對於螢幕寬度的百分比定位 */
+        /* left: 73%; 使用相對於螢幕寬度的百分比定位 */
         transform: translateX(-50%); /* 確保在縮小或調整螢幕寬度時仍然居中顯示 */
         max-width: calc(100% - 5vw); /* 確保搜尋欄在縮小時不會超出頁面 */
+        right: 5%; /* 靠右側 5% 距離 */
+        width: auto; /* 自動調整寬度 */
+        gap: 5px; /* 搜尋框內元素之間的距離 */
 }
 
 .search-form input {
@@ -320,10 +323,12 @@ h3 {
     border-radius: 10px; /* 給輸入框設置圓角，讓邊角更加圓滑 */
     width: 200px; /* 設定輸入框的寬度為 200px */
     /* max-width: 100%; 防止超出 */
+
+    /*新增*/
+        max-width: calc(100% - 80px); /* 避免與按鈕重疊 */
+    box-sizing: border-box; /* 包括內邊距與邊框 */
     
-/*(新增)*/
-    max-width: calc(100% - 50px); /* 避免輸入框在窄螢幕上過大 */
-    box-sizing: border-box; /* 包括內外邊距 */
+
 }
 
 .search-form button {
