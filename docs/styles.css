@@ -482,6 +482,12 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 .carousel-images img.visible {
     display: block; /* 只有 .visible 類別的圖片顯示 */
 }
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 95%; /* 手機裝置佔更大比例 */
+        height: 50vh; /* 調高高度讓圖片更明顯 */
+    }
+}
 
 
 
