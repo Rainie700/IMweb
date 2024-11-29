@@ -326,7 +326,7 @@ h3 {
 
     /*新增*/
         max-width: calc(100% - 80px); /* 避免與按鈕重疊 */
-    box-sizing: border-box; /* 包括內邊距與邊框 */
+    /* box-sizing: border-box; 包括內邊距與邊框 */
     
 
 }
