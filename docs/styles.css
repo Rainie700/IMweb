@@ -452,59 +452,36 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 
     /*圖片跑馬燈*/
 .carousel {
-    /*width: 100%;*/ /* 確保跑馬燈寬度佔滿容器 */
-    /*overflow: hidden;*/ /* 隱藏超出容器範圍的部分 */
-    /*position: relative;*/ /* 為定位子元素提供參考 */
-    /*height: 40vh;*/ /* 設定跑馬燈容器的高度，使圖片條更矮 (40vh)*/
-
-    height: 300px; /*can be anything*/
-    width: 1180px; /*can be anything*/
-    position: relative;
+    width: 100%; /* 寬度佔滿容器 */
+    max-width: 1180px; /* 設定最大寬度 */
+    height: 40vh; /* 高度相對於視窗高度 */
+    max-height: 300px; /* 最大高度限制 */
+    margin: 0 auto; /* 讓跑馬燈容器居中 */
+    overflow: hidden; /* 隱藏超出容器範圍的部分 */
+    position: relative; /* 為子元素提供定位參考 */
 }
 
-    .carousel-images {
-        display: flex; /* 設定為彈性盒模型，使圖片排列成一排 */
-        transition: transform 1s ease; /* 使圖片變換時有平滑效果 */
-        width: 300%; /* 根據圖片數量調整，這裡有 3 張圖片 */
-    }
-
-.carousel img {
-    /*width: 100%;*/ /*每張圖片寬度佔滿跑馬燈容器 */
-    height: auto; /*保持圖片的比例 */
-    /*display: block;*/
-    margin: 0 auto !important;/**/ /*讓圖片置中*/
-
-
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.carousel-images {
+    display: flex; /* 彈性盒模型排列圖片 */
+    transition: transform 1s ease; /* 平滑切換效果 */
+    width: 300%; /* 根據圖片數量調整寬度 */
+    height: 100%; /* 保持與容器一致 */
 }
 
+.carousel-images img {
+    flex: 0 0 auto; /* 固定每張圖片大小 */
+    max-width: 100%; /* 圖片寬度不超過容器 */
+    max-height: 100%; /* 圖片高度不超過容器 */
+    width: auto; /* 自動調整寬度以保持比例 */
+    height: auto; /* 自動調整高度以保持比例 */
+    object-fit: contain; /* 確保圖片完整顯示且保持比例 */
+    margin: auto; /* 讓圖片居中 */
+    display: none; /* 預設隱藏所有圖片 */
+}
 
-    .carousel img {
-        width: 50%;  /*調整為較小的百分比，控制圖片的寬度 */
-        height: auto;  /*保持圖片比例 */
-        display: block;
-        margin: 0 auto;  /*讓圖片置中 */
-    }
-
-
-    .carousel-images img {
-        width: 100%;
-        display: none; /* 預設所有圖片隱藏 */
-    }
-
-    .carousel-images img.visible {
-        display: block; /* 只有加上 .visible 類別的圖片顯示 */
-    }
-
+.carousel-images img.visible {
+    display: block; /* 只有 .visible 類別的圖片顯示 */
+}
 
 
 
