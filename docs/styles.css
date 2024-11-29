@@ -303,12 +303,12 @@ h3 {
     padding: 3px; /* 設定搜尋框的內邊距，讓內部元素不會緊貼邊緣 */
     /*margin-left: 73vw;*/
     max-width: calc(100% - 10px); /* 確保搜尋框不會超出螢幕 */
-    /* margin-top: 5px; 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
+    margin-top: 5px; /* 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
     box-sizing: border-box; /* 確保 padding 和 border 包括在內 */
 
     /*新增*/
         position: absolute; /* 絕對定位 */
-        top: 10px;/*  距離頁面頂部的距離 */
+        /*top: 10px;  距離頁面頂部的距離 */
         /* left: 73%; 使用相對於螢幕寬度的百分比定位 */
         transform: translateX(-50%); /* 確保在縮小或調整螢幕寬度時仍然居中顯示 */
         max-width: calc(100% - 5vw); /* 確保搜尋欄在縮小時不會超出頁面 */
