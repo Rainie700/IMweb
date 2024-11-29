@@ -302,7 +302,8 @@ h3 {
     border-radius: 3px; /* 給搜尋框外圍添加圓角 */
     padding: 3px; /* 設定搜尋框的內邊距，讓內部元素不會緊貼邊緣 */
     /*margin-left: 73vw;*/
-    max-width: calc(100% - 10px); /* 確保搜尋框不會超出螢幕 */
+    max-width: 100%; /* 防止子元素寬度超過父容器 */
+    width: calc(100% - 10px); /* 適當調整寬度 */
     margin-top: 5px; /* 設定搜尋框距離上方元素的距離，用來微調搜尋框的位置 */
     box-sizing: border-box; /* 確保 padding 和 border 包括在內 */
 
