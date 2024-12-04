@@ -17,10 +17,11 @@
     <main>
         <h2>搜尋結果：</h2>
         <!-- 搜尋結果顯示區 -->
-        <script async src="https://cse.google.com/cse.js?cx=525a724bc5de64d89">
+        <script>
+            if(text === "大一"){
+                resultDiv.innerHTML = `<a href="courses-year1.html">大一課程介紹</a>`;
+            }
         </script>
-        <div class="gcse-searchresults-only"></div>
-    </main>
 
     <footer>
         <p>&copy; 2024 資訊管理學系</p>
