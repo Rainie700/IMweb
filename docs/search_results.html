@@ -19,7 +19,7 @@
             <h2>搜尋結果：</h2>
             <!-- 搜尋結果顯示區 -->
             <div id="result">
-                <p><br><br><br></p>
+                <p><br><br>抱歉，搜尋功能尚在開發中<br><br></p>
             </div>
         </section>
     </main>
@@ -28,14 +28,5 @@
         <p>&copy; 2024 資訊管理學系</p>
     </footer>
 
-    <script>
-        const query = new URLSearchParams(window.location.search).get('query')?.trim();
-        const resultDiv = document.getElementById('result');
-        
-        if(query ==='大一'){
-            resultDiv.innerHTML = `<a href="courses-year1.html">大一課程介紹</a>`;
-        }
-            
-    </script>
 </body>
 </html>
