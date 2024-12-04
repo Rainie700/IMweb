@@ -16,17 +16,21 @@
 
     <main>
         <section>
-        <h2>搜尋結果：</h2>
-        <!-- 搜尋結果顯示區 -->
-        <script>
-            if(text === "大一"){
-                resultDiv.innerHTML = `<a href="courses-year1.html">大一課程介紹</a>`;
-            }
-        </script>
+            <h2>搜尋結果：</h2>
+            <!-- 搜尋結果顯示區 -->
+            <div id="result"></div>
         </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 資訊管理學系</p>
     </footer>
+
+    <script>
+        if(query ==='大一'){
+            resultDiv.innerHTML = `<a href="courses-year1.html">大一課程介紹</a>`;
+        }
+            
+    </script>
 </body>
 </html>
