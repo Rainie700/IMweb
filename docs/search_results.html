@@ -29,6 +29,9 @@
     </footer>
 
     <script>
+        const query = new URLSearchParams(window.location.search).get('query')?.trim();
+        const resultDiv = document.getElementById('result');
+        
         if(query ==='大一'){
             resultDiv.innerHTML = `<a href="courses-year1.html">大一課程介紹</a>`;
         }
