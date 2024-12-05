@@ -550,6 +550,19 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     display: inline-block; /* 使背景色只在文字區域 */
 }
 
+/*系標籤按鈕樣式*/
+#aButton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;/* 按鈕的背景顏色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+#aButton:hover {
+    background-color: #c70039; /* 特定按鈕的 hover 顏色 */
+}
 
 
 
