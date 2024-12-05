@@ -551,7 +551,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 }
 
 /*系標籤按鈕樣式*/
-#aButton{
+.aButton{
     display: inline-block;
     padding: 10px 20px;
     background-color: #9ca8ba;/* 按鈕的背景顏色 */
@@ -560,7 +560,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     border-radius: 5px;
     text-align: center;
 }
-#aButton:hover {
+.aButton:hover {
     background-color: #c8cdc8; /* 按鈕懸停時的背景顏色 */
 }
 
