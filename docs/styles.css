@@ -561,7 +561,8 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    text-align: center;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
 }
 .aButton:hover {
     background-color: #c8cdc8; /* 按鈕懸停時的背景顏色 */
