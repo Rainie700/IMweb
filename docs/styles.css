@@ -557,7 +557,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     width: 80px;
     height: 80px;
     margin-right: 10px
-    background-color: #9ca8ba;/* 按鈕的背景顏色 */
+    background-color: #9ca8ba; /* 按鈕的背景顏色 */
     color: white;
     text-decoration: none;
     border-radius: 5px;
