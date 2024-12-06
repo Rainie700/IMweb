@@ -552,7 +552,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 
 /*系標籤按鈕樣式*/
 .aButton{
-    display: inline-block;
+    display: flex;
     padding: 10px 20px;
     width: 90px;
     height: 80px;
