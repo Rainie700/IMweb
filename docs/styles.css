@@ -580,6 +580,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 #sbq h2 {
     color: #393C60;
     background-color: #D0CBCB;
+    border-radius: 5px;
 }
 
 #sbq ul {
