@@ -555,12 +555,12 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     display: flex; /* 設為 flex 容器 */
     justify-content: center; /* 使按鈕在水平方向上居中 */
     align-items: center; /* 使按鈕在垂直方向上居中 */
-    gap: 20px; /* 設置按鈕之間的間距 */
+    gap: 15px; /* 設置按鈕之間的間距 */
 }
 .aButton{
     display: flex;
     padding: 10px 20px;
-    width: 90px;
+    width: 100px;
     height: 80px;
     margin-right: 30px;
     background-color: #9CA8BA;/* 按鈕的背景顏色 */
