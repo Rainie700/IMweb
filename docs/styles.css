@@ -554,10 +554,10 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 .aButton{
     display: inline-block;
     padding: 10px 20px;
-    width: 80px;
+    width: 90px;
     height: 80px;
     margin-right: 30px;
-    background-color: #BF9FA6;/* 按鈕的背景顏色 */
+    background-color: #9CA8BA;/* 按鈕的背景顏色 */
     color: white;
     text-decoration: none;
     border-radius: 5px;
