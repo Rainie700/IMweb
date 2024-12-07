@@ -560,7 +560,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 .aButton{
     display: flex;
     padding: 1vh 2vw;
-    width: 10vw;
+    width: 15vw;
     height: 7vh;
     margin-right: 3vw;
     background-color: #9CA8BA;/* 按鈕的背景顏色 */
