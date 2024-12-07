@@ -602,5 +602,27 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     margin-bottom: 10px;
 }
 
+/* 系標籤區塊 */
+#hashtagArea {
+    padding: 20px;
+    margin: 20px 0;
+    /*background-color: #f2f2f2;*/
+    border-radius: 8px;
+}
+
+#hashtagArea h2 {
+    color: #34495e;
+}
+
+#hashtagArea ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#hashtagArea ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 
 
