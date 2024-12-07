@@ -576,10 +576,11 @@ ul.dropdown-menu li:hover > .dropdown-menu {
     background-color: #c8cdc8; /* 按鈕懸停時的背景顏色 */
 }
 
-/* 系標籤區塊 */
+/* 系標籤內部區塊 */
 #sbq {
     padding: 20px;
     margin: 20px 0;
+    background-color: #f9f9f9;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
