@@ -215,11 +215,7 @@ h3 {
     border-radius: 5px;
 }
 
-/* faculty.html 中的 h3 樣式 */
-#faculty-header {
-    background-color: transparent; /* 去掉底色 */
-    color: #333; /* 文字顏色 */
-}
+
 
 /* eventl.html 中的 h3 樣式 */
 #event h3 {
@@ -231,6 +227,27 @@ h3 {
 #faculty-page h3 {
     text-align: left; /* 讓教授的名字靠左對齊 */
     margin-left: 0;
+}
+/* faculty.html 中的 h3 樣式 */
+#faculty-header {
+    background-color: transparent; /* 去掉底色 */
+    color: #333; /* 文字顏色 */
+}
+    /* 講師照片的樣式 */
+    .faculty-photo {
+        width: 150px;
+        height: auto;
+        display: block;
+    }
+
+    .professor {
+        text-align: left; /* 確保內容居中 */
+        margin-bottom: 30px; /* 調整每個教授的區塊之間的距離 */
+    }
+
+.faculty-member {
+    padding-bottom: 20px; /* 增加每個講師區塊的底部間距 */
+    position: relative;
 }
 
 /* 課程頁面中 h3 樣式 */
@@ -376,17 +393,7 @@ h3 {
                 text-decoration: underline;
             }
 
-    /* 講師照片的樣式 */
-    .faculty-photo {
-        width: 150px;
-        height: auto;
-        display: block;
-    }
 
-    .professor {
-        text-align: left; /* 確保內容居中 */
-        margin-bottom: 30px; /* 調整每個教授的區塊之間的距離 */
-    }
 
 
     /* 主選單樣式 */
@@ -523,10 +530,7 @@ ul.dropdown-menu li:hover > .dropdown-menu {
 
 
 
-.faculty-member {
-    padding-bottom: 20px; /* 增加每個講師區塊的底部間距 */
-    position: relative;
-}
+
 
 #JT-1, #JT-2, #JT-3 {
     color: #443C3C; /* 如果需要保持底色，可以用此樣式 */
