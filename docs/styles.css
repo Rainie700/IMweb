@@ -256,12 +256,12 @@ h3 {
     height: auto;
 }
 
-a {
+#faculty a {
     color: #007BFF; /* 連結顏色 */
     text-decoration: none; /* 去掉下劃線 */
 }
 
-a:hover {
+#faculty a:hover {
     text-decoration: underline; /* 滑鼠懸停效果 */
 }
 /*faculty end*/
