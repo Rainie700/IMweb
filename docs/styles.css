@@ -223,32 +223,6 @@ h3 {
     color: #333; /* 文字顏色 */
 }
 
-/* faculty 頁面中的 h3 標題對齊 */
-#faculty-page h3 {
-    text-align: left; /* 讓教授的名字靠左對齊 */
-    margin-left: 0;
-}
-/* faculty.html 中的 h3 樣式 */
-#faculty-header {
-    background-color: transparent; /* 去掉底色 */
-    color: #333; /* 文字顏色 */
-}
-    /* 講師照片的樣式 */
-    .faculty-photo {
-        width: 150px;
-        height: auto;
-        display: block;
-    }
-
-    .professor {
-        text-align: left; /* 確保內容居中 */
-        margin-bottom: 30px; /* 調整每個教授的區塊之間的距離 */
-    }
-
-.faculty-member {
-    padding-bottom: 20px; /* 增加每個講師區塊的底部間距 */
-    position: relative;
-}
 
 /* 課程頁面中 h3 樣式 */
 #courses h3 {
@@ -257,7 +231,40 @@ h3 {
     padding: 10px;
     border-radius: 5px;
 }
+/*faculty*/
+.faculty-table {
+    width: 100%;
+    border-collapse: collapse; /* 合併表格邊框 */
+    margin-top: 20px;
+}
 
+.faculty-table th, 
+.faculty-table td {
+    border: 1px solid #ccc; /* 表格邊框 */
+    padding: 10px; /* 單元格內邊距 */
+    text-align: center; /* 內容居中 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+.faculty-table th {
+    background-color: #f4f4f4; /* 表頭背景色 */
+    color: #333; /* 表頭文字顏色 */
+}
+
+.faculty-photo {
+    width: 100px; /* 照片大小 */
+    height: auto;
+}
+
+a {
+    color: #007BFF; /* 連結顏色 */
+    text-decoration: none; /* 去掉下劃線 */
+}
+
+a:hover {
+    text-decoration: underline; /* 滑鼠懸停效果 */
+}
+/*faculty end*/
 /* 學生事務 h3 樣式 */
 #affairs h3 {
     color: #443C3C; /* 如果需要保持底色，可以用此樣式 */
