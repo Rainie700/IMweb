@@ -136,7 +136,7 @@ footer ul li a:hover {
     margin-bottom: 10px;
 }
 #department-features a {
-    color: #0D3858; /* 原連結顏色 #007BFF */
+    color: #007BFF; /* 原連結顏色 #007BFF */
     /* text-decoration: none; 去掉下劃線 */
 }
 
