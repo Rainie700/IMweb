@@ -135,6 +135,14 @@ footer ul li a:hover {
     font-size: 18px;
     margin-bottom: 10px;
 }
+#department-features a {
+    color: #2980b9; /* 原連結顏色 #007BFF */
+    text-decoration: none; /* 去掉下劃線 */
+}
+
+#department-features a:hover {
+    text-decoration: underline; /* 滑鼠懸停效果 */
+}
 
 /* 課程介紹區塊 */
 #courses {
@@ -257,7 +265,7 @@ h3 {
 }
 
 #faculty a {
-    color: #007BFF; /* 連結顏色 */
+    color: #2980b9; /* 原連結顏色 #007BFF */
     text-decoration: none; /* 去掉下劃線 */
 }
 
@@ -267,14 +275,7 @@ h3 {
 /*faculty end*/
 
 
-#department-features a {
-    color: #007BFF; /* 連結顏色 */
-    text-decoration: none; /* 去掉下劃線 */
-}
 
-#department-features a:hover {
-    text-decoration: underline; /* 滑鼠懸停效果 */
-}
 
 /* 學生事務 h3 樣式 */
 #affairs h3 {
